@@ -82,6 +82,8 @@ details li::marker{color:var(--red)}
 .foot{background:var(--black);color:#e6deda;margin-top:48px;padding:28px 0 24px;font-size:15px}
 .foot-in{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;justify-content:space-between}
 .foot p{margin:0}
+.contact{display:grid;gap:4px}
+.who{color:#b2a59f}.who b{color:#fff}
 .foot a{color:#fff;text-decoration-color:var(--red)}
 
 /* sticky CTA (mobile) */
