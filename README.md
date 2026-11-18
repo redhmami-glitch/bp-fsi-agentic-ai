@@ -1,4 +1,4 @@
-# Agentic AI · Financial Services — offres BearingPoint
+# Agentic AI, Financial Services Industry : offres BearingPoint
 
 Mini-site statique (HTML/CSS/JS, sans build) présentant 3 offres :
 stage de fin d'études, Consultant (junior), Senior Consultant.

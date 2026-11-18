@@ -1,6 +1,6 @@
 // ===== Configuration =====
 // Adresse qui reçoit les candidatures : changer ici uniquement.
-const RECRUITER_EMAIL = "redoua.hmami@bearingpoint.com";
+const RECRUITER_EMAIL = "redouan.hmami@bearingpoint.com";
 
 (function () {
   const params = new URLSearchParams(location.search);
@@ -30,7 +30,7 @@ const RECRUITER_EMAIL = "redoua.hmami@bearingpoint.com";
 
   function buildMailto(d) {
     const name = (d.name || "").trim();
-    const subject = `[Candidature] ${currentRole}${name ? " — " + name : ""}`;
+    const subject = `[Candidature] ${currentRole}${name ? " : " + name : ""}`;
     const body = [
       "Bonjour,",
       "",
@@ -72,7 +72,7 @@ const RECRUITER_EMAIL = "redoua.hmami@bearingpoint.com";
   const shareBtn = document.getElementById("shareBtn");
   shareBtn.addEventListener("click", async () => {
     const url = location.origin + location.pathname + "#offres";
-    const data = { title: "Agentic AI · Financial Services — BearingPoint", text: "Offres à revoir et postuler plus tard", url };
+    const data = { title: "Agentic AI, Financial Services Industry, BearingPoint", text: "Offres à revoir et postuler plus tard", url };
     try {
       if (navigator.share) await navigator.share(data);
       else { await navigator.clipboard.writeText(url); flash(shareBtn, "Lien copié ✓"); }
